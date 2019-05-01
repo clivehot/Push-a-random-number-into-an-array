@@ -1,0 +1,36 @@
+<html>
+<head>
+        
+</head>
+<body>
+    
+<script>
+var randomNumber2 = [];
+function test(){
+    var s=0;
+    while ( s < 5 ) {
+       // generate random numbers the length of the amount of images
+          var d = new Date();
+       var year = d.getFullYear();
+       var month = d.getMonth();
+       var day = d.getDay();
+       var hour = d.getHours();
+       var min = d.getMinutes();
+       var millisec = d.getMilliseconds();
+       var wild = Math.floor((Math.random() * 10000) + 1);
+       var single_randomNumber2 = "" + year + " " + month + " " + day + " " + hour + " " + min + " " + millisec + " " + wild + " " ;
+      
+       // put the random numbers into an array for the uploading of the
+       randomNumber2.push(single_randomNumber2);
+       s++
+    }
+    console.log(randomNumber2);
+}                              
+</script>
+
+<p id="demo" onclick="test()" >click</p>
+    
+    
+
+</body>
+</html>
